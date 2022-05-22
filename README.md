@@ -1,6 +1,6 @@
 # Quest-submissions
 Emerald City Academy- Beginner Cadence Bootcamp (may 2022)
-Chapter 1 & 2 Quests
+
 
 Chapter 1.0
 Day 1 quest-
@@ -14,5 +14,5 @@ Day 2 quest-
 The five cadence programming pillars are: Safety/Security, Clarity, Approachability, Developer Experience, and Resource Oriented Programming
 These pillars are useful for new users to be able to learn cadence and develop smart contracts for the flow blockchain. Safety/Security is also useful because without it, nobody would want to use it.
 
-Chapter 2 Day 1- (included screenshot of quest output, unsure if it is visible)
+Chapter 2 Day 1- 
 ![image](https://user-images.githubusercontent.com/106039625/169721017-d84d22a5-459f-464a-a0cc-2440eb682b6e.png)
