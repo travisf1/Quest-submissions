@@ -36,6 +36,3 @@ Chapter 2 Day 2
 ![image](https://user-images.githubusercontent.com/106039625/169858991-f5de0241-55e4-4ed3-9b12-eeda6051389c.png)
 
 ![image](https://user-images.githubusercontent.com/106039625/169859049-3801694b-47a6-4630-8a07-a25dc995fae3.png)
-
-
-
