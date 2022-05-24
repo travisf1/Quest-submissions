@@ -22,3 +22,39 @@ Chapter 2 Day 2
 
 
 
+
+Chapter 2 Day 3
+
+1-
+![image](https://user-images.githubusercontent.com/106039625/170078960-83e6b048-6523-4d08-b6c4-1c6d9133da0d.png)
+
+2-
+![image](https://user-images.githubusercontent.com/106039625/170079071-1bf9e569-9849-4afe-89c4-9dd93f4b4f4a.png)
+
+3- 
+
+The Force-Unwrap operator !, gets rid of optional types unless the “thing” it attempts to unwrap is nil, which causes it to abort.
+
+For example:  
+
+var name1: String? = "Travis"
+var unwrappedName1: String = name1!
+
+Since the name “Travis” is not nil, the optional was unwrapped to String, instead of the optional type, “String?”. 
+
+
+4-
+The error message means that it expected a String type, but got a String optional (String?)
+
+This is occurring because the return subject they used was an address type, not a string type. 
+
+In order to fix this, a force-unwrap operator ! needs to be placed at the end of the return thing[0x03]. This returns it to the actual type, string, since there is no nil.
+
+![image](https://user-images.githubusercontent.com/106039625/170079419-c2716f05-e303-4e04-8445-0017ad5d8194.png)
+
+
+
+
+
+
+
