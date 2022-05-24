@@ -10,6 +10,10 @@ Check that your variable is actually equals "the best" by executing a script to 
 
 (Answer)
 
+![image](https://user-images.githubusercontent.com/106039625/170081588-0f5731ad-33d0-4811-9f0d-635d92154c35.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/106039625/169721017-d84d22a5-459f-464a-a0cc-2440eb682b6e.png)
 
 
