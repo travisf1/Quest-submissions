@@ -1,2 +1,2 @@
 # Quest-submissions
-Emerald City Academy- Beginner Cadence Bootcamp (may 2022)
+Emerald City Academy- Beginner Cadence Bootcamp (June 2022)
