@@ -56,13 +56,15 @@ Add a transaction that takes in a parameter named myNewNumber and passes it into
 
 # Chapter 2 Day 3
 
-1- (Question)- In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
+1- (Question)
+In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
 
 (Answer)
 
 ![image](https://user-images.githubusercontent.com/106039625/170078960-83e6b048-6523-4d08-b6c4-1c6d9133da0d.png)
 
-2- (Question)- In a script, initialize a dictionary that maps the Strings Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a UInt64 that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
+2- (Question) 
+In a script, initialize a dictionary that maps the Strings Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a UInt64 that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
 
 
 (Answer)
@@ -71,7 +73,6 @@ Add a transaction that takes in a parameter named myNewNumber and passes it into
 
 
 3- 
-
 The Force-Unwrap operator !, gets rid of optional types unless the “thing” it attempts to unwrap is nil, which causes it to abort.
 
 For example:  
