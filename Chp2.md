@@ -1,4 +1,4 @@
-Chapter 2 Day 1
+# Chapter 2 Day 1
 
 1- (Question) 
 
@@ -19,7 +19,7 @@ Check that your variable is actually equals "the best" by executing a script to 
 
 
 
-Chapter 2 Day 2
+# Chapter 2 Day 2
 
 1- The reason we would not call changeGreeting in a script is because a script is only used to view the information, it can not be used to actually change the data. 
 
@@ -54,7 +54,7 @@ Add a transaction that takes in a parameter named myNewNumber and passes it into
 
 
 
-Chapter 2 Day 3
+# Chapter 2 Day 3
 
 1- (Question)- In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
 
