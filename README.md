@@ -118,3 +118,28 @@ In order to fix this, a force-unwrap operator ! needs to be placed at the end of
 
 ![image](https://user-images.githubusercontent.com/106039625/172392196-27e5cbb6-4b37-4c40-af92-c666a1534454.png)
 
+
+
+
+# Chapter 3 Day 1
+
+1-
+Resources differ from structs due to the fact that they can only exist in one location, they must be used, and they cannot be copied. This makes them more secure than a struct, and handling them requires much more explicit directions. 
+
+2-
+A resource might be better to use than a struct when handling an asset that we do not want to destroy due to a mistake such as a valuable NFT. This is because resources can only be lost through the actual “destroy” keyword. 
+
+3-
+The keyword to make a new resource is “create” 
+
+4-
+No, resources can only be created within contracts.  
+
+5-
+the type is @Jacob
+
+6-
+![image](https://user-images.githubusercontent.com/106039625/172456337-05d9b9b3-9771-48cb-8307-74a1843901a6.png)
+
+
+
