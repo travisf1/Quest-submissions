@@ -93,8 +93,83 @@ In order to fix this, a force-unwrap operator ! needs to be placed at the end of
 ![image](https://user-images.githubusercontent.com/106039625/170079419-c2716f05-e303-4e04-8445-0017ad5d8194.png)
 
 
+# Chapter 2 day 4
+
+![image](https://user-images.githubusercontent.com/106039625/172391821-11617915-1f60-4140-b311-b9b6ed5bb975.png)
+
+![image](https://user-images.githubusercontent.com/106039625/172391973-ccf49083-7e6e-49f4-8d5e-45c03e970fc7.png)
+
+![image](https://user-images.githubusercontent.com/106039625/172392196-27e5cbb6-4b37-4c40-af92-c666a1534454.png)
 
 
+pub contract Authentication {
 
+    pub var contacts: {Address: Contact}
+    
+    pub struct Contact {
+        pub let firstName: String
+        pub let discord: String
+        pub let twitter: String
+        pub let account: Address
 
+        // You have to pass in 4 arguments when creating this Struct.
+        init(_firstName: String, _discord: String, _twitter: String, _account: Address) {
+            self.firstName = _firstName
+            self.discord = _discord
+            self.twitter = _twitter
+            self.account = _account
+        }
+    }
+
+    pub fun addProfile(firstName: String, discord: String, twitter: String, account: Address) {
+        let newProfile = Contact(_firstName: firstName, _discord: discord, _twitter: twitter, _account: account)
+        self.contacts[account] = newProfile
+    }
+
+    init() {
+        self.contacts = {}
+    }
+
+}
+
+pub contract Authentication {
+
+    pub var contacts: {Address: Contact}
+    
+    pub struct Contact {
+        pub let firstName: String
+        pub let discord: String
+        pub let twitter: String
+        pub let account: Address
+
+        // You have to pass in 4 arguments when creating this Struct.
+        init(_firstName: String, _discord: String, _twitter: String, _account: Address) {
+            self.firstName = _firstName
+            self.discord = _discord
+            self.twitter = _twitter
+            self.account = _account
+        }
+    }
+
+    pub fun addContact(firstName: String, discord: String, twitter: String, account: Address) {
+        let newContact = Contact(_firstName: firstName, _discord: discord, _twitter: twitter, _account: account)
+        self.contacts[account] = newContact
+    }
+
+    init() {
+        self.contacts = {}
+    }
+
+}
+import Authentication from 0x01
+
+transaction(firstName: String, discord: String, twitter: String, account: Address) {
+
+    prepare(signer: AuthAccount) {}
+
+    execute {
+    Authentication.addContact(firstName: firstName, discord: discord, twitter: twitter, account: account)
+        log("We're done.")
+    }
+}
 
