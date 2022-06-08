@@ -142,7 +142,7 @@ the type is @Jacob
 ![image](https://user-images.githubusercontent.com/106039625/172456337-05d9b9b3-9771-48cb-8307-74a1843901a6.png)
 
 
-# Chaoter 3 Day 2
+# Chapter 3 Day 2
 
 
 ![image](https://user-images.githubusercontent.com/106039625/172717676-3ac1999e-23f8-478e-a432-d5aade96d149.png)
