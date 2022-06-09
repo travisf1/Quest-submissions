@@ -151,7 +151,16 @@ the type is @Jacob
 ![image](https://user-images.githubusercontent.com/106039625/172717772-186d1c29-7bd0-4dd1-9401-88a082eae640.png)
 
 
+# Chapter 3 Day 3 
+
+1-
+![image](https://user-images.githubusercontent.com/106039625/172887367-a85d5bfc-2eb4-47aa-a3be-a0ae2190473d.png)
 
 
+2-
+![image](https://user-images.githubusercontent.com/106039625/172887437-18c52b10-5966-4c60-9495-34ab05e2e7a4.png)
 
+
+3-
+References can be useful in cadence primarily in order to modify resources without having to move them around.
 
