@@ -176,6 +176,10 @@ Resource interfaces can be used to set requirements for a resource to implement,
 
 3-
 I fixed the first error by defining the “favouriteFruit” variable within the struct, as well as initializing it. The second error was fixed by adding 
-```cadence pub fun changeGreeting(newGreeting: String): String``` the struct interface.
+```cadence 
+pub fun changeGreeting(newGreeting: String): String
+``` 
+to the struct interface.
+
 ![image](https://user-images.githubusercontent.com/106039625/173624952-21de3044-0a35-43c4-a28f-e32f72babed5.png)
 
