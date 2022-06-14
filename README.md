@@ -164,3 +164,14 @@ the type is @Jacob
 3-
 References can be useful in cadence primarily in order to modify resources without having to move them around.
 
+# Chapter 3 Day 4
+
+1-
+Resource interfaces can be used to set requirements for a resource to implement, as well as being used to expose/limit exposure to specific things within a resource by using restricted types.
+
+
+
+2-
+![image](https://user-images.githubusercontent.com/106039625/173620341-811a6fbe-f613-4dea-b1d4-25a5415d7455.png)
+
+
