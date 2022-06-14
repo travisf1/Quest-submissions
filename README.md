@@ -183,3 +183,8 @@ to the struct interface.
 
 ![image](https://user-images.githubusercontent.com/106039625/173624952-21de3044-0a35-43c4-a28f-e32f72babed5.png)
 
+# Chapter 3 Day 5
+
+![image](https://user-images.githubusercontent.com/106039625/173666922-c2a8e26a-b726-4836-83ef-7f623b043511.png)
+
+
