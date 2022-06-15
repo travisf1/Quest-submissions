@@ -194,9 +194,13 @@ to the struct interface.
 Contract code and Account storage. Contract code is basically any contracts within the account and account storage is where data is held.
 
 2- 
-/storage/ - This is only accessible by the owner of the account.
-/public/ - Available to anyone.
-/private/- Available to the owner of the account and those given permission.
+/storage/ - This is only accessible by the owner of the account by using AuthAccount. This should only be done in transactions.
+
+/public/ - Accessible to anyone, as well as anywhere (contract, scripts, transactions). 
+
+/private/- Available to the owner of the account and those given permission by the owner.
+
+/public/ and /private/ both "look" at /storage/, where the data is actually stored.
 
 3-
 .save()- saves the resources to a /storage/ path within account storage
