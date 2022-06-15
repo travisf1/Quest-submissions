@@ -191,7 +191,7 @@ to the struct interface.
 # Chapter 4 Day 1
 
 1-
-Contract code and Account storage. Contract bode is basically any contracts within the account and account storage is where data is held.
+Contract code and Account storage. Contract code is basically any contracts within the account and account storage is where data is held.
 
 2- 
 /storage/ - This is only accessible by the owner of the account.
@@ -210,7 +210,7 @@ Contract code and Account storage. Contract bode is basically any contracts with
 Scripts can only be used to view data, not modify or move it.
 
 5-
-Other can not save things to your account because it requires the account owner to sign the transaction in order to provide their AuthAccount as a paramter within the prepare phase of the transaction. 
+Other people can not save things to your account because doing so requires the account owner to sign the transaction in order to provide their AuthAccount as a paramter within the prepare phase of the transaction. 
 
 6-
 
