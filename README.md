@@ -213,10 +213,16 @@ Scripts can only be used to view data, not modify or move it.
 Other people can not save things to your account because doing so requires the account owner to sign the transaction in order to provide their AuthAccount as a paramter within the prepare phase of the transaction. 
 
 6-
+Contract
+![image](https://user-images.githubusercontent.com/106039625/173869489-679542cf-55ac-46ec-8547-e3eb2797c587.png)
 
 
+Transaction 1
+![image](https://user-images.githubusercontent.com/106039625/173869698-929268b3-76a5-441e-85e6-3beb89f7e2d4.png)
 
 
+Transaction 2
+![image](https://user-images.githubusercontent.com/106039625/173869844-95e6ead4-f518-4331-a676-5b7d50dadfee.png)
 
 
 
