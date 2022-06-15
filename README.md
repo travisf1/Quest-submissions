@@ -188,3 +188,40 @@ to the struct interface.
 ![image](https://user-images.githubusercontent.com/106039625/173666922-c2a8e26a-b726-4836-83ef-7f623b043511.png)
 
 
+# Chapter 4 Day 1
+
+1-
+Contract code and Account storage. Contract bode is basically any contracts within the account and account storage is where data is held.
+
+2- 
+/storage/ - This is only accessible by the owner of the account.
+/public/ - Available to anyone.
+/private/- Available to the owner of the account and those given permission.
+
+3-
+.save()- saves the resources to a /storage/ path within account storage
+ 
+.load()-  takes the data out of account storage as an optional.
+ 
+.borrow()- gets a reference to the resource within account storage. Does not move the actual resource.
+
+
+4-
+Scripts can only be used to view data, not modify or move it.
+
+5-
+Other can not save things to your account because it requires the account owner to sign the transaction in order to provide their AuthAccount as a paramter within the prepare phase of the transaction. 
+
+6-
+
+
+
+
+
+
+
+
+
+
+
+
