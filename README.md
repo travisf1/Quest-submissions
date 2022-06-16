@@ -258,5 +258,28 @@ Scripts:
 ![image](https://user-images.githubusercontent.com/106039625/173991643-39b23264-7959-4a55-83fe-7f9279a7a1f8.png)
 
 
+# Chapter 4 Day 3
+
+1-
+
+So others can deposit NFT’s into our collection without requiring access to our account storage. 
+
+
+Making it so that we can wrap our NFT’s into the collection and use one storage path instead of having a different storage path for each NFT. 
+
+
+2-
+
+If you have nested resources you must declare a destroy function
+
+
+3-
+
+
+We would want to add a way to either restrict the ability to mint new NTfs or place a cap on the supply. 
+
+No, it would be better to make references to resource interfaces that contain the information you want to be accessible while restricting the data that you want private. 
+
+
 
 
