@@ -370,4 +370,27 @@ pub contract CryptoPoops {
 }
 ```
 
+# Chapter 5 Day 1
+
+
+1-
+Events are basically a way to announce that something happened. This could be useful to add transparency within a program, or to mark milestones such as “1,000,000th nft mint”.
+
+2 & 3
+
+![image](https://user-images.githubusercontent.com/106039625/174162283-5f68d316-8575-4f6f-a33d-1ae0f041f8cf.png)
+
+
+
+
+4-
+Yes, this function will log the name.
+
+Yes, the function will return the value. 
+
+No, it will have an error due to the post condition. 
+Self.number is initialized at 0 then set to increment by 1 and return self.number. However, because 1 does not == (result + 1), the post condition will  fail and it will be an error.
+
+
+
 
