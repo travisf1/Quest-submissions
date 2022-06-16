@@ -276,7 +276,7 @@ If you have nested resources you must declare a destroy function
 3-
 
 
-We would want to add a way to either restrict the ability to mint new NTfs or place a cap on the supply. 
+We would want to add a way to either restrict the ability to mint new NFTs or place a cap on the supply. 
 
 No, it would be better to make references to resource interfaces that contain the information you want to be accessible while restricting the data that you want private. 
 
