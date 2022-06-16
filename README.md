@@ -247,7 +247,7 @@ Contract:
 ![image](https://user-images.githubusercontent.com/106039625/173991289-ea84e814-5a11-4d2a-aa2f-78ef39563199.png)
 
 
-Trasaction:
+Transaction:
 
 ![image](https://user-images.githubusercontent.com/106039625/173991362-c4a35cd4-7cdb-4460-ba01-e18f9cfde5da.png)
 
