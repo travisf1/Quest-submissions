@@ -280,6 +280,89 @@ We would want to add a way to either restrict the ability to mint new NTfs or pl
 
 No, it would be better to make references to resource interfaces that contain the information you want to be accessible while restricting the data that you want private. 
 
+```cadence
+pub contract CryptoPoops {
+  pub var totalSupply: UInt64
 
+  // This is an NFT resource that contains a name,
+  // favouriteFood, and luckyNumber
+  pub resource NFT {
+    pub let id: UInt64
+
+    pub let name: String
+    pub let favouriteFood: String
+    pub let luckyNumber: Int
+
+    init(_name: String, _favouriteFood: String, _luckyNumber: Int) {    //sets values for NFT resource variables
+      self.id = self.uuid
+
+      self.name = _name
+      self.favouriteFood = _favouriteFood
+      self.luckyNumber = _luckyNumber
+    }
+  }
+
+  // This is a resource interface that implements the Collection resource and allows us to reference chosen variables and functions while ...(cont) 
+// restricting the data within the resource that we do not want exposed such as the withdraw function
+  pub resource interface CollectionPublic {
+    pub fun deposit(token: @NFT)          // this will allow other to deposit NFTs into our collection
+    pub fun getIDs(): [UInt64]                // this will allow the public to see our NFT ID within our public collection reference
+    pub fun borrowNFT(id: UInt64): &NFT       // this will allow the public to get a reference to a resource we hold within our storage and read  ...(cont)
+    //our NFT without having to withdraw it.
+  }
+
+  pub resource Collection: CollectionPublic { //this is a resource referenced by the CollectionPublic interface. the collection wraps our NFT's so...(cont)
+      //...we can save them under one storage path. 
+    pub var ownedNFTs: @{UInt64: NFT}
+
+    pub fun deposit(token: @NFT) {                    //explained above in resource interface
+      self.ownedNFTs[token.id] <-! token
+    }
+
+    pub fun withdraw(withdrawID: UInt64): @NFT {            //this allows us to withdraw NFT's from our collection
+      let nft <- self.ownedNFTs.remove(key: withdrawID) 
+              ?? panic("This NFT does not exist in this Collection.")
+      return <- nft
+    }
+
+    pub fun getIDs(): [UInt64] {                        //explained above in resource interface
+      return self.ownedNFTs.keys
+    }
+
+    pub fun borrowNFT(id: UInt64): &NFT {             //explained above in resource interface
+      return (&self.ownedNFTs[id] as &NFT?)!
+    }
+
+    init() {                        
+      self.ownedNFTs <- {}
+    }
+
+    destroy() {                               //destroys the nested resource 
+      destroy self.ownedNFTs
+    }
+  }
+
+  pub fun createEmptyCollection(): @Collection {         //this creates our collection that we wrap our NFT resources in   
+    return <- create Collection()
+  }
+
+  pub resource Minter {  //this resource is what holds the function that allows the NFT to be minted and should be owned by whoever deployed the contract.        
+
+    pub fun createNFT(name: String, favouriteFood: String, luckyNumber: Int): @NFT { //this function creates the 
+      return <- create NFT(_name: name, _favouriteFood: favouriteFood, _luckyNumber: luckyNumber)
+    }
+
+    pub fun createMinter(): @Minter {  //This function creates the Minter resource so that it can be saved to the contract deployers account. 
+      return <- create Minter()
+    }
+
+  }
+
+  init() {
+    self.totalSupply = 0
+    self.account.save(<- create Minter(), to: /storage/Minter) //saves Minter resource to account of contract deployer
+  }
+}
+```
 
 
