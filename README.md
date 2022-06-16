@@ -280,6 +280,11 @@ We would want to add a way to either restrict the ability to mint new NTfs or pl
 
 No, it would be better to make references to resource interfaces that contain the information you want to be accessible while restricting the data that you want private. 
 
+
+
+# Chapter 4 Day 4
+
+
 ```cadence
 pub contract CryptoPoops {
   pub var totalSupply: UInt64
