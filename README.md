@@ -392,6 +392,22 @@ numberThree:
 No, it will have an error due to the post condition. 
 Self.number is initialized at 0 then set to increment by 1 and return self.number. However, because 1 does not == (result + 1), the post condition will  fail and it will be an error.
 
+# Chapter 5 Day 2
+
+1- Having NFT contract standards makes it easier for clients such as DApps to interact with multiple NFT contracts without having to implement different functionality for each one. 
+
+2- Pizza or Cereal
+
+
+3-
+
+Contract Interface-
+![image](https://user-images.githubusercontent.com/106039625/174187416-3f69a0d8-7082-4985-9262-c95cf39c3502.png)
+
+Implementing Contract
+![image](https://user-images.githubusercontent.com/106039625/174187485-d33410cf-7d5d-48f4-a819-3493782b7d3c.png)
+
+
 
 
 
