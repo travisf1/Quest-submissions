@@ -230,7 +230,32 @@ Transaction 2
 
 
 
+## Chapter 4 Day 2
 
+1-
+
+Links a resource to the /public/ or /private/ path by creating a reference to data held in /storage/ 
+
+2- 
+
+Resource interfaces can be used to control what is exposed to the /public/ path because you can create a link to the resource, you can restrict the reference to use the resource interface. Within the resource interface, you can specify which parts of the resource you want to be implemented. Any variables/functions that are present in the resource but not the resource interface will not be accessible within the reference link. 
+
+3-
+
+Contract:
+
+![image](https://user-images.githubusercontent.com/106039625/173991289-ea84e814-5a11-4d2a-aa2f-78ef39563199.png)
+
+
+Trasaction:
+
+![image](https://user-images.githubusercontent.com/106039625/173991362-c4a35cd4-7cdb-4460-ba01-e18f9cfde5da.png)
+
+
+Scripts:
+![image](https://user-images.githubusercontent.com/106039625/173991502-0ac17224-36c4-4a67-a690-6e7c34fc8bd7.png)
+
+![image](https://user-images.githubusercontent.com/106039625/173991643-39b23264-7959-4a55-83fe-7f9279a7a1f8.png)
 
 
 
