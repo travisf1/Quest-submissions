@@ -382,10 +382,13 @@ Events are basically a way to announce that something happened. This could be us
 
 
 4-
+numberOne:
 Yes, this function will log the name.
 
+numberTwo:
 Yes, the function will return the value. 
 
+numberThree:
 No, it will have an error due to the post condition. 
 Self.number is initialized at 0 then set to increment by 1 and return self.number. However, because 1 does not == (result + 1), the post condition will  fail and it will be an error.
 
