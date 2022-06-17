@@ -408,6 +408,17 @@ Implementing Contract- (CORRECTION- updateNumber function should set self.number
 ![image](https://user-images.githubusercontent.com/106039625/174187485-d33410cf-7d5d-48f4-a819-3493782b7d3c.png)
 
 
+# Chapter 5 Day 3
+
+1-
+
+Force casting with as! Downcasts a generic resource type to be a more specific type or panics if it does not work.. This is useful to have in our collection for when others try to deposit NFT’s into our account. Using as! We can downcast it to a more specific NFT type to make sure not just any generic NFT type can be deposited.
+
+2-
+
+Auth gives you an authorized reference. We must use this when we need to downcast a reference. 
+
+3-
 
 
 
