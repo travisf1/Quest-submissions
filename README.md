@@ -376,7 +376,7 @@ pub contract CryptoPoops {
 1-
 Events are basically a way to announce that something happened. This could be useful to add transparency within a program, or to mark milestones such as “1,000,000th nft mint”.
 
-2 & 3-
+2 & 3- (Correction, flip > and < signs)
 
 ![image](https://user-images.githubusercontent.com/106039625/174162283-5f68d316-8575-4f6f-a33d-1ae0f041f8cf.png)
 
