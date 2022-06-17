@@ -404,7 +404,7 @@ Self.number is initialized at 0 then set to increment by 1 and return self.numbe
 Contract Interface-
 ![image](https://user-images.githubusercontent.com/106039625/174187416-3f69a0d8-7082-4985-9262-c95cf39c3502.png)
 
-Implementing Contract
+Implementing Contract- (CORRECTION- updateNumber function should set self.number to newNumber and set a value for newNumber)
 ![image](https://user-images.githubusercontent.com/106039625/174187485-d33410cf-7d5d-48f4-a819-3493782b7d3c.png)
 
 
